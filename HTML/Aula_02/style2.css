@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label{
+    margin-bottom: 0.5rem;
+}
+
+.campo input{
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button{
+    padding: 0.7rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 50%;
+    align-self: center;
+    background-color: rgb(43, 155, 8);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover{
+    background-color: green;
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1 class="titulo">Formulário de Contato</h1>
+            <form action="/enviar" method="POST" class="form">
+                <!-- campo de texto para o nome -->
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required><br><br>
+                </div>
+                
+                <!-- campo de texto para o email -->
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Insira seu email" required><br><br>
+                </div>
+        
+                <!-- campo de texto para o senha -->
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required><br><br>
+                </div>
+        
+                <!-- campo de texto para o nome -->
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea type="mensagem" name="mensagem" rows="5" cols="50" placeholder="Insira a mensagem" required></textarea><br><br>
+                </div>
+        
+                <!-- Botão para enviar -->
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
