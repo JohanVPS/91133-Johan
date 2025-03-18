@@ -1,0 +1,89 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(214, 214, 214);
+}
+
+header{
+    background-color: rgb(56, 55, 55);
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    padding: 0.8rem;
+}
+
+li{
+    font-size: 14pt;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li:hover{
+    background-color: rgb(66, 66, 66);
+    cursor: pointer;
+    transition: 1ms;
+    a{
+        border-bottom: 1px solid;
+        color: gold;
+    }
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 1rem;
+    scroll-behavior: auto;
+}
+
+main section{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 0.4rem;
+    padding: 1.5rem;
+    width: 95%;
+}
+
+main section h2{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid;
+    border-color: gold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
