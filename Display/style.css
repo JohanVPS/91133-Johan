@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    border: 2px solid red;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item{
+    border: 1px solid rgb(0, 0, 0);
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: rgb(0, 128, 85);
+}
