@@ -58,7 +58,7 @@ ul li a:hover{
     text-align: center;
     width: 100%;
     padding-top: 2rem;
-
+    margin-bottom: 3rem;
 }
 
 .services h1{
@@ -85,7 +85,7 @@ ul li a:hover{
 }
 
 .services ul li{
-    padding: 0.8rem;
+    padding: 0.5rem;
     font-size: 1.2rem;
 }
 
