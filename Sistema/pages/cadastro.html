@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <link rel="stylesheet" href="../styles/cadastro.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema CadPro - 1.0</h1>
+        <button id="logoutBtn">Sair</button>
+    </header>
+
+    <h3 id="userWelcome">Carregando...</h3>
+
+    <form action="">
+        <label for="">Produto</label>
+        <input type="text" name="produto" id="produto">
+
+        <label for="">Quantidade</label>
+        <input type="text" name="quantidade" id="quantidade">
+
+        <label for="">Preço</label>
+        <input type="text" name="preco" id="preco">
+
+        <label for="">Campo 4</label>
+        <input type="text" name="campo4" id="campo4">
+
+        <button type="submit" class="button">Cadastrar</button>
+    </form>
+
+    <script>
+        //recupera o nome do usuário do localStorage
+        const username = localStorage.getItem("username");
+
+        if(username){
+            document.getElementById("userWelcome")
+            .textContent = `Usuário: ${username}`
+        } else{
+            document.getElementById("userWelcome")
+            .textContent = "Nome de usuárioi não encontrado."
+        }
+
+        //Função para sair (destuir a sessão e voltar para o login)
+        document.getElementById("logoutBtn").addEventListener("click", 
+        function(){
+            //Remove o nome de usuário do localStorage
+            localStorage.removeItem("username");
+
+            //Redireciona o usuário de volta para a página de login
+            window.location.href = "index.html"; //Alterar para o caminho da página 
+        })
+    </script>
+</body>
+</html>
