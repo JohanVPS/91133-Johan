@@ -22,7 +22,7 @@ $preco = floatval($_POST['preco'] ?? 0);
 $quantidade = intval($_POST['quantidade'] ?? 0);
 $total = floatval($_POST['total'] ?? 0);
 
-if($produto === "" || $preco < = 0 || $quantidade <= 0){
+if($produto === "" || $preco <= 0 || $quantidade <= 0){
     echo "Dados inválidos!";
     exit;
 }
@@ -32,7 +32,7 @@ $stmt = $conn->prepare("INSERT INTO produtos (produto, preco, quantidade, total)
 $stmt->bind_param("ssid", $produto, $preco, $quantidade, $total);
 
 //Executa a verifica
-if($stmt, t->execute()){
+if($stmt ->execute()){
     echo "Cadastro realizado com sucesso!";
 } else{
     echo "Erro ao cadastrar: ". $stmt->error;
