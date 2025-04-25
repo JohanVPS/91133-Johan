@@ -2,7 +2,7 @@
 // Verifica se a requisição é POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     // Redireciona para a página inicial se for acesso direto
-    header("Location: http://localhost/app/index.html");
+    header("Location: http://localhost:8081/app/index.html");
     exit;
 }
 
@@ -23,6 +23,6 @@ include '/view/conecta.php';
 // Mostra alerta e redireciona para o formulário
 echo "<script>
     alert('Cadastro realizado com sucesso!');
-    window.location.href = 'http://localhost/app/index.html';
+    window.location.href = 'http://localhost:8081/app/cad.html';
 </script>";
 ?>
